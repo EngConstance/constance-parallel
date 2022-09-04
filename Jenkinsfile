@@ -3,8 +3,7 @@ pipeline{
 	stages{
 		stage('git-clone2'){
 			steps{
-				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/EngConstance/constance-parallel.git']]])
-			 
+				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '01b44015-5552-4132-bee4-166dad8754a6', url: 'https://github.com/EngConstance/constance-parallel.git']]])
 			}
 		}
 		stage('parallel-level'){
