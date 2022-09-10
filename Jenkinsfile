@@ -7,7 +7,7 @@ pipeline{
 			}
 		}
 		stage('parallel-level'){
-			prallel {
+			parallel {
 				stage('sub-job1'){
 					steps{
 						echo "sub-job1task"
